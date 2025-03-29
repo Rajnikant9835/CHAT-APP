@@ -74,7 +74,9 @@ const EditUserDetails = ({ onClose, user }) => {
         e.stopPropagation();
     
         try {
-            const URL = `${process.env.REACT_APP_BACKEND_URL}/api/update-user`;
+            // const URL = `${process.env.REACT_APP_BACKEND_URL}/api/update-user`;
+            const URL = "https://chat-app-backend-d36r.onrender.com/api/update-user";
+
             
             // Ensure data does not contain circular structures
             const sanitizedData = {
